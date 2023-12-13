@@ -49,6 +49,7 @@ jobs:
           cache: 'npm'
       - run: npm install -g
       - run: npm install -g playwright
+      - run: npx wait-on https://shadoowkrit-softuni-reeeeee.onrender.com
       - name: Install Playwright
         run: npx playwright install
       - run: npm run test:ui
