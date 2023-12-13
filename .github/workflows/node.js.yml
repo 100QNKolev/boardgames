@@ -48,7 +48,6 @@ jobs:
           node-version: 18.x
           cache: 'npm'
       - run: npm install -g
-      - run: npm install -g playwright
       - run: npx wait-on https://shadoowkrit-softuni-reeeeee.onrender.com
       - name: Install Playwright
         run: npx playwright install
