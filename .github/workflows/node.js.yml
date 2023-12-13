@@ -52,6 +52,7 @@ jobs:
       - run: npx wait-on https://shadoowkrit-softuni-reeeeee.onrender.com
       - name: Install Playwright
         run: npx playwright install
+      - run: npm update @playwright/test
       - run: npm run test:ui
 
 
