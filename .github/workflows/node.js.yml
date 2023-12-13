@@ -51,7 +51,7 @@ jobs:
    - run: npm install
    - name: install Playwright
      run: |
-       npm config set unsafe-perm true
+       npm config set --unsafe-perm true
        npx playwright install
    - run: npm run test:ui
 
