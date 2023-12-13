@@ -48,7 +48,8 @@ jobs:
           node-version: 18.x
           cache: 'npm'
       - run: npm install
-      - run: npx playwright install
+      - name: Install Playwright
+        run: npx --no-install playwright install
       - run: npm run test:ui
 
 
